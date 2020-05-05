@@ -1,6 +1,6 @@
 #!/bin/sh
 # Luke's Auto Rice Boostrapping Script (LARBS)
-# by Adrian Claridge <am_claridge@icloud.com>
+# by Adrian zenobit
 # License: GNU GPLv3
 
 ### OPTIONS AND VARIABLES ###
@@ -13,8 +13,8 @@ while getopts ":a:r:b:p:h" o; do case "${o}" in
 	*) printf "Invalid option: -%s\\n" "$OPTARG" && exit ;;
 esac done
 
-[ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/PlatinumClaridge/voidrice.git"
-[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/PlatinumClaridge/LARBS/master/progs.csv"
+[ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/zen0bit/voidrice.git"
+[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/zen0bit/LARBS/master/progs.csv"
 [ -z "$repobranch" ] && repobranch="master"
 
 ### FUNCTIONS ###
